@@ -22,6 +22,7 @@ BASE_URL = "/accounts"
 
 HTTPS_ENVIRON = {'wsgi.url_scheme': 'https'}
 
+
 ######################################################################
 #  T E S T   C A S E S
 ######################################################################
@@ -53,6 +54,7 @@ class TestAccountService(TestCase):
         """Runs once after each test case"""
         db.session.remove()
 
+
     ######################################################################
     #  H E L P E R   M E T H O D S
     ######################################################################
@@ -72,6 +74,7 @@ class TestAccountService(TestCase):
             account.id = new_account["id"]
             accounts.append(account)
         return accounts
+
 
     ######################################################################
     #  A C C O U N T   T E S T   C A S E S
