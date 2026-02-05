@@ -21,6 +21,8 @@ spec:
       - image: us.icr.io/sn-labs-robamcclella/accounts:1
         name: accounts
         resources: {}
+      - image: IMAGE_NAME_HERE
+      name: accounts
 status: {}
 env:
   - name: DATABASE_HOST
